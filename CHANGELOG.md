@@ -1,3 +1,9 @@
+## [2.4.2](https://github.com/Neovici/cosmoz-queue/compare/v2.4.1...v2.4.2) (2026-03-26)
+
+### Bug Fixes
+
+* duplicate data when _params and list$ change at the same time ([#35](https://github.com/Neovici/cosmoz-queue/issues/35)) ([372b3d8](https://github.com/Neovici/cosmoz-queue/commit/372b3d84376865c3dbc9f28101603237e52aa9e7))
+
 ## [2.4.1](https://github.com/Neovici/cosmoz-queue/compare/v2.4.0...v2.4.1) (2026-03-14)
 
 ### Bug Fixes
