@@ -1,3 +1,9 @@
+## [2.5.0](https://github.com/Neovici/cosmoz-queue/compare/v2.4.3...v2.5.0) (2026-05-05)
+
+### Features
+
+* update @neovici/cosmoz-form dependency range (force release) ([7675e5a](https://github.com/Neovici/cosmoz-queue/commit/7675e5a8e796c90c202a8af5b582e306b22a6552))
+
 ## [2.4.3](https://github.com/Neovici/cosmoz-queue/compare/v2.4.2...v2.4.3) (2026-04-15)
 
 ### Bug Fixes
