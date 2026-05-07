@@ -1,8 +1,8 @@
 import { array } from '@neovici/cosmoz-utils/array';
 import { memoize } from '@neovici/cosmoz-utils/memoize';
-import { useViewInfo } from '@neovici/cosmoz-viewinfo';
 import { useCallback, useMemo } from '@pionjs/pion';
 import { json } from '../util/fetch/fetch';
+import { useMobile } from './use-mobile';
 
 import useDataNav, { Opts as UseDataNav } from './use-data-nav';
 import useKeyNav from './use-key-nav';
@@ -107,7 +107,7 @@ const useQueue = <I>({
 	...thru
 }: Opts<I>) => {
 	const { items: _items, selected } = thru,
-		{ mobile } = useViewInfo(),
+		mobile = useMobile(),
 		items = useMemo(() => normalizeHeaders(_items), [_items]),
 		queueItems = useMemo(() => getItems(items, selected), [items, selected]),
 		{ tabnav, activeTab } = useTabs({

@@ -176,13 +176,7 @@ export const base = css`
 	}
 `;
 
-export default ({
-	index,
-	mobile,
-}: {
-	index?: number | string;
-	mobile?: boolean;
-}) => css`
+export default ({ index }: { index?: number | string }) => css`
 	${base}
 
 	#list::part(itemRow-${index || '0'}) {
@@ -192,18 +186,14 @@ export default ({
 		);
 	}
 
-	${(mobile &&
-		css`
-		.tabn-heading {
-			font-size: 14px;
-			margin-left: 12px;
-		}
-		.tabn-tab {
-			padding: 10px;
-		}
-		[name="split"] {
-			display: none;
-		}
-	}`) ||
-	''}
+	:host([data-mobile]) .tabn-heading {
+		font-size: 14px;
+		margin-left: 12px;
+	}
+	:host([data-mobile]) .tabn-tab {
+		padding: 10px;
+	}
+	:host([data-mobile]) [name='split'] {
+		display: none;
+	}
 `;
