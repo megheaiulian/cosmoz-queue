@@ -182,7 +182,6 @@ export interface RenderQueue<I, D> extends Pick<
 	heading?: string;
 	afterHeading?: unknown;
 	index?: number;
-	mobile?: boolean;
 	items: I[];
 	totalAvailable?: number;
 	list: TemplateResult;
@@ -196,7 +195,6 @@ export const renderQueue = <I, D>({
 	heading,
 	afterHeading,
 	index,
-	mobile,
 	tabnav,
 	items,
 	totalAvailable,
@@ -213,7 +211,7 @@ export const renderQueue = <I, D>({
 		: undefined;
 	return html`
 		<style>
-			${renderStyles({ index, mobile })}
+			${renderStyles({ index })}
 		</style>
 
 		<cosmoz-tabs-next class="tabn">

@@ -12,7 +12,8 @@ type ViewProps<I> = Omit<QueueProps<I>, 'nav'> & {
 };
 
 interface Props<I, D>
-	extends Pick<UseQueue<I>, 'id' | 'api' | 'fallback' | 'split'>,
+	extends
+		Pick<UseQueue<I>, 'id' | 'api' | 'fallback' | 'split'>,
 		Pick<RenderQueue<I, D>, 'details' | 'afterHeading'> {
 	list: (
 		thru: Record<string, any>,
@@ -60,7 +61,6 @@ export const queue = <I, D = I>(props: Props<I, D>) => {
 
 	const {
 		index,
-		mobile,
 		hideActions,
 		items,
 		setItems,
@@ -82,7 +82,6 @@ export const queue = <I, D = I>(props: Props<I, D>) => {
 		details,
 		heading,
 		afterHeading,
-		mobile,
 		index,
 		items,
 		tabnav,
