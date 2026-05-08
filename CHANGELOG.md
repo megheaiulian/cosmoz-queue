@@ -1,3 +1,9 @@
+## [2.7.0](https://github.com/Neovici/cosmoz-queue/compare/v2.6.0...v2.7.0) (2026-05-08)
+
+### Features
+
+* replace @neovici/cosmoz-i18next with i18next direct dependency ([#40](https://github.com/Neovici/cosmoz-queue/issues/40)) ([b4248cb](https://github.com/Neovici/cosmoz-queue/commit/b4248cbfb90b127397a99e7c0cc948b4cd220ad5))
+
 ## [2.6.0](https://github.com/Neovici/cosmoz-queue/compare/v2.5.0...v2.6.0) (2026-05-07)
 
 ### Features
