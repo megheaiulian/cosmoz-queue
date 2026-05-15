@@ -1,3 +1,9 @@
+## [2.7.1](https://github.com/Neovici/cosmoz-queue/compare/v2.7.0...v2.7.1) (2026-05-15)
+
+### Bug Fixes
+
+* preserve list data when sort params change ([518a40f](https://github.com/Neovici/cosmoz-queue/commit/518a40f5008d3ee0d6d9c67cb11959b167aee4cb))
+
 ## [2.7.0](https://github.com/Neovici/cosmoz-queue/compare/v2.6.0...v2.7.0) (2026-05-08)
 
 ### Features
