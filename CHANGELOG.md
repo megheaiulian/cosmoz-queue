@@ -1,3 +1,9 @@
+## [2.7.2](https://github.com/Neovici/cosmoz-queue/compare/v2.7.1...v2.7.2) (2026-05-20)
+
+### Bug Fixes
+
+* hide view content when not visible in overview mode ([5c89e5e](https://github.com/Neovici/cosmoz-queue/commit/5c89e5e936130fcfb099f1e89db9d0fcd0f4fc54))
+
 ## [2.7.1](https://github.com/Neovici/cosmoz-queue/compare/v2.7.0...v2.7.1) (2026-05-15)
 
 ### Bug Fixes
