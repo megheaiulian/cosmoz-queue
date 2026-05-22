@@ -1,194 +1,200 @@
 ## [2.7.2](https://github.com/Neovici/cosmoz-queue/compare/v2.7.1...v2.7.2) (2026-05-20)
 
+## 2.8.0
+
+### Minor Changes
+
+- 7da66ee: Migrate from semantic-release to changesets for branch protection compliance.
+
 ### Bug Fixes
 
-* hide view content when not visible in overview mode ([5c89e5e](https://github.com/Neovici/cosmoz-queue/commit/5c89e5e936130fcfb099f1e89db9d0fcd0f4fc54))
+- hide view content when not visible in overview mode ([5c89e5e](https://github.com/Neovici/cosmoz-queue/commit/5c89e5e936130fcfb099f1e89db9d0fcd0f4fc54))
 
 ## [2.7.1](https://github.com/Neovici/cosmoz-queue/compare/v2.7.0...v2.7.1) (2026-05-15)
 
 ### Bug Fixes
 
-* preserve list data when sort params change ([518a40f](https://github.com/Neovici/cosmoz-queue/commit/518a40f5008d3ee0d6d9c67cb11959b167aee4cb))
+- preserve list data when sort params change ([518a40f](https://github.com/Neovici/cosmoz-queue/commit/518a40f5008d3ee0d6d9c67cb11959b167aee4cb))
 
 ## [2.7.0](https://github.com/Neovici/cosmoz-queue/compare/v2.6.0...v2.7.0) (2026-05-08)
 
 ### Features
 
-* replace @neovici/cosmoz-i18next with i18next direct dependency ([#40](https://github.com/Neovici/cosmoz-queue/issues/40)) ([b4248cb](https://github.com/Neovici/cosmoz-queue/commit/b4248cbfb90b127397a99e7c0cc948b4cd220ad5))
+- replace @neovici/cosmoz-i18next with i18next direct dependency ([#40](https://github.com/Neovici/cosmoz-queue/issues/40)) ([b4248cb](https://github.com/Neovici/cosmoz-queue/commit/b4248cbfb90b127397a99e7c0cc948b4cd220ad5))
 
 ## [2.6.0](https://github.com/Neovici/cosmoz-queue/compare/v2.5.0...v2.6.0) (2026-05-07)
 
 ### Features
 
-* replace cosmoz-viewinfo with local useMobile hook ([eea156c](https://github.com/Neovici/cosmoz-queue/commit/eea156c53db296eab3890274f0fe49b5e8ecdc81))
+- replace cosmoz-viewinfo with local useMobile hook ([eea156c](https://github.com/Neovici/cosmoz-queue/commit/eea156c53db296eab3890274f0fe49b5e8ecdc81))
 
 ## [2.5.0](https://github.com/Neovici/cosmoz-queue/compare/v2.4.3...v2.5.0) (2026-05-05)
 
 ### Features
 
-* update @neovici/cosmoz-form dependency range (force release) ([7675e5a](https://github.com/Neovici/cosmoz-queue/commit/7675e5a8e796c90c202a8af5b582e306b22a6552))
+- update @neovici/cosmoz-form dependency range (force release) ([7675e5a](https://github.com/Neovici/cosmoz-queue/commit/7675e5a8e796c90c202a8af5b582e306b22a6552))
 
 ## [2.4.3](https://github.com/Neovici/cosmoz-queue/compare/v2.4.2...v2.4.3) (2026-04-15)
 
 ### Bug Fixes
 
-* **renderStats:** only show selection position in queue/split view ([c10fbae](https://github.com/Neovici/cosmoz-queue/commit/c10fbaed2b2ffadde724272f87ecd43fe8c349fb))
+- **renderStats:** only show selection position in queue/split view ([c10fbae](https://github.com/Neovici/cosmoz-queue/commit/c10fbaed2b2ffadde724272f87ecd43fe8c349fb))
 
 ## [2.4.2](https://github.com/Neovici/cosmoz-queue/compare/v2.4.1...v2.4.2) (2026-03-26)
 
 ### Bug Fixes
 
-* duplicate data when _params and list$ change at the same time ([#35](https://github.com/Neovici/cosmoz-queue/issues/35)) ([372b3d8](https://github.com/Neovici/cosmoz-queue/commit/372b3d84376865c3dbc9f28101603237e52aa9e7))
+- duplicate data when \_params and list$ change at the same time ([#35](https://github.com/Neovici/cosmoz-queue/issues/35)) ([372b3d8](https://github.com/Neovici/cosmoz-queue/commit/372b3d84376865c3dbc9f28101603237e52aa9e7))
 
 ## [2.4.1](https://github.com/Neovici/cosmoz-queue/compare/v2.4.0...v2.4.1) (2026-03-14)
 
 ### Bug Fixes
 
-* **list:** correct hasMore off-by-one error in useMore (FE-368) ([4849867](https://github.com/Neovici/cosmoz-queue/commit/4849867dd2dcdadcdf2e262460c69db236d882b8))
+- **list:** correct hasMore off-by-one error in useMore (FE-368) ([4849867](https://github.com/Neovici/cosmoz-queue/commit/4849867dd2dcdadcdf2e262460c69db236d882b8))
 
 ## [2.4.0](https://github.com/Neovici/cosmoz-queue/compare/v2.3.0...v2.4.0) (2026-03-13)
 
 ### Features
 
-* **list:** add configurable compareItemsFn prop to renderListCore (FE-366) ([aa57f34](https://github.com/Neovici/cosmoz-queue/commit/aa57f341d944840e993e39d79ffc91e01d4292d6))
+- **list:** add configurable compareItemsFn prop to renderListCore (FE-366) ([aa57f34](https://github.com/Neovici/cosmoz-queue/commit/aa57f341d944840e993e39d79ffc91e01d4292d6))
 
 ## [2.3.0](https://github.com/Neovici/cosmoz-queue/compare/v2.2.0...v2.3.0) (2026-03-12)
 
 ### Features
 
-* **list:** add sortOn, descending, groupOn params to listCore() for default sort ([#32](https://github.com/Neovici/cosmoz-queue/issues/32)) ([e1f69a2](https://github.com/Neovici/cosmoz-queue/commit/e1f69a2677376c88c00090e9475e8ecda893e5da))
+- **list:** add sortOn, descending, groupOn params to listCore() for default sort ([#32](https://github.com/Neovici/cosmoz-queue/issues/32)) ([e1f69a2](https://github.com/Neovici/cosmoz-queue/commit/e1f69a2677376c88c00090e9475e8ecda893e5da))
 
 ## [2.2.0](https://github.com/Neovici/cosmoz-queue/compare/v2.1.1...v2.2.0) (2026-03-03)
 
 ### Features
 
-* pass paramsMeta to columns factory for cross-column narrowing ([#31](https://github.com/Neovici/cosmoz-queue/issues/31)) ([0c2ee13](https://github.com/Neovici/cosmoz-queue/commit/0c2ee135656b6c23d544f45077f6617fa9298c9e))
+- pass paramsMeta to columns factory for cross-column narrowing ([#31](https://github.com/Neovici/cosmoz-queue/issues/31)) ([0c2ee13](https://github.com/Neovici/cosmoz-queue/commit/0c2ee135656b6c23d544f45077f6617fa9298c9e))
 
 ## [2.1.1](https://github.com/Neovici/cosmoz-queue/compare/v2.1.0...v2.1.1) (2026-03-02)
 
 ### Bug Fixes
 
-* pass item directly in omnitable-item-click event instead of index ([52af1c0](https://github.com/Neovici/cosmoz-queue/commit/52af1c057451f6a95805a8ad3a14d5690952f674))
-* require either item or index in itemClick via discriminated union ([61d11ab](https://github.com/Neovici/cosmoz-queue/commit/61d11abb9394cb5487f9056da7d3250a0096c4b1))
-* use ItemClickOpts type for omnitable-item-click event detail in onItemClick ([b7ab72f](https://github.com/Neovici/cosmoz-queue/commit/b7ab72f764dab7617a92ceb75800d6648c8c9a2c))
+- pass item directly in omnitable-item-click event instead of index ([52af1c0](https://github.com/Neovici/cosmoz-queue/commit/52af1c057451f6a95805a8ad3a14d5690952f674))
+- require either item or index in itemClick via discriminated union ([61d11ab](https://github.com/Neovici/cosmoz-queue/commit/61d11abb9394cb5487f9056da7d3250a0096c4b1))
+- use ItemClickOpts type for omnitable-item-click event detail in onItemClick ([b7ab72f](https://github.com/Neovici/cosmoz-queue/commit/b7ab72f764dab7617a92ceb75800d6648c8c9a2c))
 
 ## [2.1.0](https://github.com/Neovici/cosmoz-queue/compare/v2.0.0...v2.1.0) (2026-02-26)
 
 ### Features
 
-* expose computed params from useListCore return value ([#27](https://github.com/Neovici/cosmoz-queue/issues/27)) ([b8027a4](https://github.com/Neovici/cosmoz-queue/commit/b8027a40894847ee8df738f1058c8b8c712cff9a))
-* **list-core:** support mini-mode in renderListCore ([#28](https://github.com/Neovici/cosmoz-queue/issues/28)) ([ea8805e](https://github.com/Neovici/cosmoz-queue/commit/ea8805e5b5081ff8d51fe82f54329796e567d605))
+- expose computed params from useListCore return value ([#27](https://github.com/Neovici/cosmoz-queue/issues/27)) ([b8027a4](https://github.com/Neovici/cosmoz-queue/commit/b8027a40894847ee8df738f1058c8b8c712cff9a))
+- **list-core:** support mini-mode in renderListCore ([#28](https://github.com/Neovici/cosmoz-queue/issues/28)) ([ea8805e](https://github.com/Neovici/cosmoz-queue/commit/ea8805e5b5081ff8d51fe82f54329796e567d605))
 
 ## [2.0.0](https://github.com/Neovici/cosmoz-queue/compare/v1.6.3...v2.0.0) (2026-02-23)
 
 ### ⚠ BREAKING CHANGES
 
-* @neovici/cosmoz-dialog-next has been renamed to @neovici/cosmoz-dialog.
+- @neovici/cosmoz-dialog-next has been renamed to @neovici/cosmoz-dialog.
 
 Ref: NEO-1130
 
 ### Features
 
-* replace @neovici/cosmoz-dialog-next with @neovici/cosmoz-dialog ([6d4386c](https://github.com/Neovici/cosmoz-queue/commit/6d4386c79e32b3ac747fd1832f48164782af5db8))
+- replace @neovici/cosmoz-dialog-next with @neovici/cosmoz-dialog ([6d4386c](https://github.com/Neovici/cosmoz-queue/commit/6d4386c79e32b3ac747fd1832f48164782af5db8))
 
 ## [1.6.3](https://github.com/Neovici/cosmoz-queue/compare/v1.6.2...v1.6.3) (2026-02-17)
 
 ### Bug Fixes
 
-* **deps:** support cosmoz-omnitable v18 ([#25](https://github.com/Neovici/cosmoz-queue/issues/25)) ([d5a2e8d](https://github.com/Neovici/cosmoz-queue/commit/d5a2e8dc44f72f8aeb45d1c45011fa3dd4cb62ac))
+- **deps:** support cosmoz-omnitable v18 ([#25](https://github.com/Neovici/cosmoz-queue/issues/25)) ([d5a2e8d](https://github.com/Neovici/cosmoz-queue/commit/d5a2e8dc44f72f8aeb45d1c45011fa3dd4cb62ac))
 
 ## [1.6.2](https://github.com/Neovici/cosmoz-queue/compare/v1.6.1...v1.6.2) (2026-02-12)
 
 ### Bug Fixes
 
-* **use-queue:** deprecate api property in favor of details ([#20](https://github.com/Neovici/cosmoz-queue/issues/20)) ([084651b](https://github.com/Neovici/cosmoz-queue/commit/084651b98697f10027cb35369a40135d542813a8))
+- **use-queue:** deprecate api property in favor of details ([#20](https://github.com/Neovici/cosmoz-queue/issues/20)) ([084651b](https://github.com/Neovici/cosmoz-queue/commit/084651b98697f10027cb35369a40135d542813a8))
 
 ## [1.6.1](https://github.com/Neovici/cosmoz-queue/compare/v1.6.0...v1.6.1) (2026-02-03)
 
 ### Bug Fixes
 
-* enable all test files and increase coverage to 66% ([76cc713](https://github.com/Neovici/cosmoz-queue/commit/76cc713b9176a05b24ae2ed703e1fdbfb67286f0))
+- enable all test files and increase coverage to 66% ([76cc713](https://github.com/Neovici/cosmoz-queue/commit/76cc713b9176a05b24ae2ed703e1fdbfb67286f0))
 
 ## [1.6.0](https://github.com/Neovici/cosmoz-queue/compare/v1.5.1...v1.6.0) (2026-01-30)
 
 ### Features
 
-* add actions subpath export ([2347798](https://github.com/Neovici/cosmoz-queue/commit/234779864ea01cd849bfa4c58c34ef0cd6c173a5))
+- add actions subpath export ([2347798](https://github.com/Neovici/cosmoz-queue/commit/234779864ea01cd849bfa4c58c34ef0cd6c173a5))
 
 ## [1.5.1](https://github.com/Neovici/cosmoz-queue/compare/v1.5.0...v1.5.1) (2026-01-30)
 
 ### Bug Fixes
 
-* **queue:** prevent button-nav from shrinking ([cfe1d66](https://github.com/Neovici/cosmoz-queue/commit/cfe1d666040cf7413bc48933822113d9c7aad8d9))
+- **queue:** prevent button-nav from shrinking ([cfe1d66](https://github.com/Neovici/cosmoz-queue/commit/cfe1d666040cf7413bc48933822113d9c7aad8d9))
 
 ## [1.5.0](https://github.com/Neovici/cosmoz-queue/compare/v1.4.0...v1.5.0) (2026-01-30)
 
 ### Features
 
-* export list/render/more ([84cde6f](https://github.com/Neovici/cosmoz-queue/commit/84cde6fbac31ab7de0b2f875715f2fec720d8ed0))
-* **list:** add genericActions$ pattern for dynamic list actions ([fe2100f](https://github.com/Neovici/cosmoz-queue/commit/fe2100f95a480e64a677adb9b1649d52b80156ef))
-* **list:** replace genericActions$ with content function ([b517d0d](https://github.com/Neovici/cosmoz-queue/commit/b517d0d8da1be75e0f8b7cb01829870feb8e9b57))
+- export list/render/more ([84cde6f](https://github.com/Neovici/cosmoz-queue/commit/84cde6fbac31ab7de0b2f875715f2fec720d8ed0))
+- **list:** add genericActions$ pattern for dynamic list actions ([fe2100f](https://github.com/Neovici/cosmoz-queue/commit/fe2100f95a480e64a677adb9b1649d52b80156ef))
+- **list:** replace genericActions$ with content function ([b517d0d](https://github.com/Neovici/cosmoz-queue/commit/b517d0d8da1be75e0f8b7cb01829870feb8e9b57))
 
 ## [1.4.0](https://github.com/Neovici/cosmoz-queue/compare/v1.3.3...v1.4.0) (2026-01-29)
 
 ### Features
 
-* add list subpath exports ([a8b521f](https://github.com/Neovici/cosmoz-queue/commit/a8b521faaad0f2e61d3b007f9b956534afa3312f))
+- add list subpath exports ([a8b521f](https://github.com/Neovici/cosmoz-queue/commit/a8b521faaad0f2e61d3b007f9b956534afa3312f))
 
 ## [1.3.3](https://github.com/Neovici/cosmoz-queue/compare/v1.3.2...v1.3.3) (2026-01-29)
 
 ### Bug Fixes
 
-* support cosmoz-omnitable v17 ([#13](https://github.com/Neovici/cosmoz-queue/issues/13)) ([9e65d79](https://github.com/Neovici/cosmoz-queue/commit/9e65d79967986c61f7feec95c8665ab0adfe04a3))
+- support cosmoz-omnitable v17 ([#13](https://github.com/Neovici/cosmoz-queue/issues/13)) ([9e65d79](https://github.com/Neovici/cosmoz-queue/commit/9e65d79967986c61f7feec95c8665ab0adfe04a3))
 
 ## [1.3.2](https://github.com/Neovici/cosmoz-queue/compare/v1.3.1...v1.3.2) (2026-01-26)
 
 ### Bug Fixes
 
-* add CSS custom properties for button-nav theming ([#11](https://github.com/Neovici/cosmoz-queue/issues/11)) ([f98feb7](https://github.com/Neovici/cosmoz-queue/commit/f98feb74dd48415be4955b643079801b2b0bd02b)), closes [#fff](https://github.com/Neovici/cosmoz-queue/issues/fff) [#a4abae](https://github.com/Neovici/cosmoz-queue/issues/a4abae) [#343434](https://github.com/Neovici/cosmoz-queue/issues/343434) [#8](https://github.com/Neovici/cosmoz-queue/issues/8)
+- add CSS custom properties for button-nav theming ([#11](https://github.com/Neovici/cosmoz-queue/issues/11)) ([f98feb7](https://github.com/Neovici/cosmoz-queue/commit/f98feb74dd48415be4955b643079801b2b0bd02b)), closes [#fff](https://github.com/Neovici/cosmoz-queue/issues/fff) [#a4abae](https://github.com/Neovici/cosmoz-queue/issues/a4abae) [#343434](https://github.com/Neovici/cosmoz-queue/issues/343434) [#8](https://github.com/Neovici/cosmoz-queue/issues/8)
 
 ## [1.3.1](https://github.com/Neovici/cosmoz-queue/compare/v1.3.0...v1.3.1) (2026-01-26)
 
 ### Bug Fixes
 
-* export util/fetch in package.json exports field ([#10](https://github.com/Neovici/cosmoz-queue/issues/10)) ([4caad67](https://github.com/Neovici/cosmoz-queue/commit/4caad679afc65293501556265cf3c97cb3b7be1e)), closes [#9](https://github.com/Neovici/cosmoz-queue/issues/9)
+- export util/fetch in package.json exports field ([#10](https://github.com/Neovici/cosmoz-queue/issues/10)) ([4caad67](https://github.com/Neovici/cosmoz-queue/commit/4caad679afc65293501556265cf3c97cb3b7be1e)), closes [#9](https://github.com/Neovici/cosmoz-queue/issues/9)
 
 ## [1.3.0](https://github.com/Neovici/cosmoz-queue/compare/v1.2.0...v1.3.0) (2026-01-25)
 
 ### Features
 
-* add getHeaders callback to setBaseInit for dynamic headers ([#7](https://github.com/Neovici/cosmoz-queue/issues/7)) ([ef25cc4](https://github.com/Neovici/cosmoz-queue/commit/ef25cc4f3c17ff3957cb6128530f52554d8a9a13)), closes [#5](https://github.com/Neovici/cosmoz-queue/issues/5)
+- add getHeaders callback to setBaseInit for dynamic headers ([#7](https://github.com/Neovici/cosmoz-queue/issues/7)) ([ef25cc4](https://github.com/Neovici/cosmoz-queue/commit/ef25cc4f3c17ff3957cb6128530f52554d8a9a13)), closes [#5](https://github.com/Neovici/cosmoz-queue/issues/5)
 
 ## [1.2.0](https://github.com/Neovici/cosmoz-queue/compare/v1.1.0...v1.2.0) (2026-01-23)
 
 ### Features
 
-* export all modules from main index ([d2cede6](https://github.com/Neovici/cosmoz-queue/commit/d2cede698420c8e2adc48f92ed232b7d1452ccf7))
+- export all modules from main index ([d2cede6](https://github.com/Neovici/cosmoz-queue/commit/d2cede698420c8e2adc48f92ed232b7d1452ccf7))
 
 ## [1.1.0](https://github.com/Neovici/cosmoz-queue/compare/v1.0.0...v1.1.0) (2026-01-20)
 
 ### Features
 
-* bump ([5d7f41e](https://github.com/Neovici/cosmoz-queue/commit/5d7f41e5b392a39e260fb1e4a17eafe02ff5e26b))
+- bump ([5d7f41e](https://github.com/Neovici/cosmoz-queue/commit/5d7f41e5b392a39e260fb1e4a17eafe02ff5e26b))
 
 ## 1.0.0 (2026-01-20)
 
 ### Features
 
-* add queue component ([3b7a8e1](https://github.com/Neovici/cosmoz-queue/commit/3b7a8e170531de4862a5af1ad9dbbeb07dd7da9a))
-* add shared styles ([e42f51f](https://github.com/Neovici/cosmoz-queue/commit/e42f51fff279f08614eae23fbc08d389976d3c63))
-* add stories ([4e397b1](https://github.com/Neovici/cosmoz-queue/commit/4e397b188298043e95543c3a82ae926c87d99053))
-* adjust imports ([8309e55](https://github.com/Neovici/cosmoz-queue/commit/8309e556608b44504ab8706ed7be4965a628e7ef))
-* adjust workflows ([19e9a91](https://github.com/Neovici/cosmoz-queue/commit/19e9a91a1fb581be35c842182b606bb537926244))
-* **list-core:** add initial implementation ([e0e7099](https://github.com/Neovici/cosmoz-queue/commit/e0e709905508c0dd3ce0356ed8d806db951f9374))
-* **list:** strip generic actions ([9a257b3](https://github.com/Neovici/cosmoz-queue/commit/9a257b30163d24ba65fddac7cf9f58b9c2254f5e))
-* **queue:** init ([0bcd6c0](https://github.com/Neovici/cosmoz-queue/commit/0bcd6c022c6da8ea3c0b1ef44e09626bebcdcdce))
-* trigger release ([f62cb2e](https://github.com/Neovici/cosmoz-queue/commit/f62cb2ee7216a9b11b70adb816f0e9177e287203))
-* update imports ([5e00dc0](https://github.com/Neovici/cosmoz-queue/commit/5e00dc023feb3b08dff9d8340b33a7769fec1c32))
-* update provenance ([9eb96bb](https://github.com/Neovici/cosmoz-queue/commit/9eb96bb4b7a87c7139136a07c60eb374bfbca9b2))
-* update semantic-release ([88b59bc](https://github.com/Neovici/cosmoz-queue/commit/88b59bce4ff14f690d699e64fec3a4f88eed611f))
+- add queue component ([3b7a8e1](https://github.com/Neovici/cosmoz-queue/commit/3b7a8e170531de4862a5af1ad9dbbeb07dd7da9a))
+- add shared styles ([e42f51f](https://github.com/Neovici/cosmoz-queue/commit/e42f51fff279f08614eae23fbc08d389976d3c63))
+- add stories ([4e397b1](https://github.com/Neovici/cosmoz-queue/commit/4e397b188298043e95543c3a82ae926c87d99053))
+- adjust imports ([8309e55](https://github.com/Neovici/cosmoz-queue/commit/8309e556608b44504ab8706ed7be4965a628e7ef))
+- adjust workflows ([19e9a91](https://github.com/Neovici/cosmoz-queue/commit/19e9a91a1fb581be35c842182b606bb537926244))
+- **list-core:** add initial implementation ([e0e7099](https://github.com/Neovici/cosmoz-queue/commit/e0e709905508c0dd3ce0356ed8d806db951f9374))
+- **list:** strip generic actions ([9a257b3](https://github.com/Neovici/cosmoz-queue/commit/9a257b30163d24ba65fddac7cf9f58b9c2254f5e))
+- **queue:** init ([0bcd6c0](https://github.com/Neovici/cosmoz-queue/commit/0bcd6c022c6da8ea3c0b1ef44e09626bebcdcdce))
+- trigger release ([f62cb2e](https://github.com/Neovici/cosmoz-queue/commit/f62cb2ee7216a9b11b70adb816f0e9177e287203))
+- update imports ([5e00dc0](https://github.com/Neovici/cosmoz-queue/commit/5e00dc023feb3b08dff9d8340b33a7769fec1c32))
+- update provenance ([9eb96bb](https://github.com/Neovici/cosmoz-queue/commit/9eb96bb4b7a87c7139136a07c60eb374bfbca9b2))
+- update semantic-release ([88b59bc](https://github.com/Neovici/cosmoz-queue/commit/88b59bce4ff14f690d699e64fec3a4f88eed611f))
 
 ### Bug Fixes
 
-* cleanup unused imports and fix lint errors in stories ([8ad7129](https://github.com/Neovici/cosmoz-queue/commit/8ad71296dd1cb1dd3ab2720bc199933c5fadc176))
-* correct package.json exports to match actual build output ([f965cfa](https://github.com/Neovici/cosmoz-queue/commit/f965cfa36a035d47a5a439c31dc8cb3fff242ca5))
+- cleanup unused imports and fix lint errors in stories ([8ad7129](https://github.com/Neovici/cosmoz-queue/commit/8ad71296dd1cb1dd3ab2720bc199933c5fadc176))
+- correct package.json exports to match actual build output ([f965cfa](https://github.com/Neovici/cosmoz-queue/commit/f965cfa36a035d47a5a439c31dc8cb3fff242ca5))
