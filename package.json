@@ -39,19 +39,8 @@
     "storybook:build": "storybook build",
     "storybook:deploy": "storybook-to-ghpages",
     "storybook:preview": "npm run storybook:build && http-server -d ./storybook-static/",
-    "prepare": "husky"
-  },
-  "release": {
-    "plugins": [
-      "@semantic-release/commit-analyzer",
-      "@semantic-release/release-notes-generator",
-      "@semantic-release/changelog",
-      "@semantic-release/github",
-      "@semantic-release/npm",
-      "@semantic-release/git"
-    ],
-    "branch": "master",
-    "preset": "conventionalcommits"
+    "prepare": "husky",
+    "changeset": "changeset"
   },
   "publishConfig": {
     "access": "public"
@@ -86,13 +75,12 @@
     "split.js": "^1.6.5"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.31.0",
     "@commitlint/cli": "^20.0.0",
     "@commitlint/config-conventional": "^20.0.0",
     "@eslint/eslintrc": "^2.0.0",
     "@neovici/cfg": "^2.11.0",
     "@neovici/testing": "^2.2.0",
-    "@semantic-release/changelog": "^6.0.0",
-    "@semantic-release/git": "^10.0.0",
     "@storybook/addon-links": "^10.0.0",
     "@storybook/addon-vitest": "^10.0.0",
     "@storybook/web-components": "^10.0.0",
@@ -107,12 +95,8 @@
     "husky": "^9.0.11",
     "jsdom": "^26.0.0",
     "playwright": "^1.52.0",
-    "semantic-release": "^25.0.0",
     "storybook": "^10.0.0",
     "typescript": "^5.4.3",
     "vitest": "^4.0.0"
-  },
-  "overrides": {
-    "conventional-changelog-conventionalcommits": ">= 8.0.0"
   }
 }
