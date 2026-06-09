@@ -1,4 +1,4 @@
-import { formDialog } from '@neovici/cosmoz-form';
+import { formDialog$ } from '@neovici/cosmoz-form';
 import '@neovici/cosmoz-omnitable';
 import { lift, type Renderable } from '@pionjs/pion';
 import { html } from 'lit-html';
@@ -105,5 +105,5 @@ export const renderListCore = <TColumns extends Columns, TItem extends object>({
 			renderLoadMore({ data$, onMore: loadMore }),
 		]}</cosmoz-omnitable
 	>`,
-	formDialog(dialog),
+	formDialog$(dialog),
 ];
