@@ -1,7 +1,7 @@
 import { html, nothing } from 'lit-html';
 import { ifDefined } from 'lit-html/directives/if-defined.js';
 import { when } from 'lit-html/directives/when.js';
-import type { Dialogable } from '@neovici/cosmoz-form';
+import type { Dialogable, Resolvable } from '@neovici/cosmoz-form';
 
 export const actionCount = <T>(items: T[], applicableItems: T[] = items) =>
 	when(applicableItems.length > 1, () =>
@@ -14,7 +14,7 @@ export const actionCount = <T>(items: T[], applicableItems: T[] = items) =>
 
 export interface ActionOpts<TItem extends object> {
 	items: TItem[];
-	open: <T extends object>(dialog: Dialogable<T>) => void;
+	open: <T extends object>(dialog: Resolvable<Dialogable<T>>) => void;
 	slot?: string;
 }
 
@@ -45,8 +45,8 @@ export const defaultButton = <
 	return html`<button
 		class="button"
 		slot="${ifDefined(slot)}"
-		@click=${async () =>
-			open(await dialog({ ...opts, items: applicableItems, title }))}
+		@click=${() =>
+			open(dialog({ ...opts, items: applicableItems, title }))}
 	>
 		${title} ${actionCount(items, applicableItems)}
 	</button>`;

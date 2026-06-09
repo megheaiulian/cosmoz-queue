@@ -1,4 +1,4 @@
-import { useFormDialogable } from '@neovici/cosmoz-form';
+import { useFormDialogable$ } from '@neovici/cosmoz-form';
 import { useMeta } from '@neovici/cosmoz-utils/hooks/use-meta';
 import { useCallback, useEffect, useMemo } from '@pionjs/pion';
 import type { ColumnFilters, ColumnNames, Columns } from './column';
@@ -27,7 +27,7 @@ export interface UseListCore<
 	list$: readonly [TList$<TParams, TItem>, unknown[]];
 }
 
-type UseFormDialogable = ReturnType<typeof useFormDialogable>;
+type UseFormDialogable$ = ReturnType<typeof useFormDialogable$>;
 
 export interface UseListCoreResult<
 	TColumns extends Columns,
@@ -36,7 +36,7 @@ export interface UseListCoreResult<
 >
 	extends
 		ListCoreState<TItem, TColumns>,
-		Pick<UseFormDialogable, 'dialog' | 'open'> {
+		Pick<UseFormDialogable$, 'dialog' | 'open'> {
 	data$: PromiseLike<TItem[]>;
 	columns: TColumns;
 	params: TParams;
@@ -71,7 +71,7 @@ export const useListCore = <
 	const paramsMeta = useMeta({} as TParams);
 	const columns = useMemo(() => _columns[0]({ paramsMeta }), _columns[1]);
 	const _params = useCallback(...__params);
-	const { rtkn, dialog, open } = useFormDialogable();
+	const { rtkn, dialog, open } = useFormDialogable$();
 
 	const params = useMemo(
 		() =>
