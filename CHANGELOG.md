@@ -1,5 +1,11 @@
 ## [2.7.2](https://github.com/Neovici/cosmoz-queue/compare/v2.7.1...v2.7.2) (2026-05-20)
 
+## 2.9.0
+
+### Minor Changes
+
+- ebb3fb2: Add async dialog support for actions via `useFormDialogable$` and `formDialog$`. Action `open` now accepts `Resolvable<Dialogable<T>>` to enable `check$()`-driven dialogs that resolve after BE validation.
+
 ## 2.8.1
 
 ### Patch Changes
