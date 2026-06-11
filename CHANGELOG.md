@@ -1,5 +1,13 @@
 ## [2.7.2](https://github.com/Neovici/cosmoz-queue/compare/v2.7.1...v2.7.2) (2026-05-20)
 
+## 2.10.0
+
+### Minor Changes
+
+- ecc635e: Make `ActionOpts.open` generic over `SyncOpenFn | AsyncOpenFn`. This allows `renderActions` to accept both `useFormDialogable().open` (sync) and `useFormDialogable$().open` (async).
+
+  New exported types: `SyncOpenFn`, `AsyncOpenFn`.
+
 ## 2.9.0
 
 ### Minor Changes
