@@ -4,12 +4,14 @@ import { ifDefined } from 'lit-html/directives/if-defined.js';
 import { when } from 'lit-html/directives/when.js';
 
 export const actionCount = <T>(items: T[], applicableItems: T[] = items) =>
-	when(applicableItems.length > 1, () =>
-		when(
-			applicableItems.length === items.length,
-			() => html`(${applicableItems.length})`,
-			() => html`(${applicableItems.length}/${items.length})`,
-		),
+	when(
+		applicableItems.length > 1 || applicableItems.length < items.length,
+		() =>
+			when(
+				applicableItems.length === items.length,
+				() => html`(${applicableItems.length})`,
+				() => html`(${applicableItems.length}/${items.length})`,
+			),
 	);
 
 export type SyncOpenFn = <T extends object>(dialog: Dialogable<T>) => void;
@@ -34,6 +36,7 @@ export interface DialogOpts<TItem extends object> {
 export interface Action<TItem extends object, TDialog extends object = object> {
 	title: () => string;
 	applicable?: (item: TItem) => boolean;
+	priority?: number;
 	button?: (
 		opts: Action<TItem, TDialog> & ActionOpts<TItem, SyncOpenFn | AsyncOpenFn>,
 	) => unknown;
@@ -56,6 +59,7 @@ export const defaultButton = <
 	return html`<button
 		class="button"
 		slot="${ifDefined(slot)}"
+		data-priority="${ifDefined(opts.priority)}"
 		@click=${() =>
 			(open as AsyncOpenFn)(dialog({ ...opts, items: applicableItems, title }))}
 	>
